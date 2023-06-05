@@ -426,6 +426,13 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-form">
+          <p class="footer-text-two">Subscribe</p>
+          <form name="subscribe">
+            <input type="email" name="email" placeholder="E-mail" />
+            <button type="subscribe">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -438,9 +445,43 @@
             <use href="./images/icons.svg#icon-button-close"></use>
           </svg>
         </button>
+        <div>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+
+            <label for="tel">Phone</label>
+            <input type="tel" name="tel" id="tel" />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+
+            <label for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+
+            <input type="checkbox" name="privacy-policy" id="privacy-policy" />
+            <label for="privacy-policy"
+              >I accept the terms and conditions of the Privacy Policy</label
+            >
+
+            <button type="send">Send</button>
+          </form>
+        </div>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<!--   <span
+                ><svg  width="24"
+                    height="20px">
+                  <use href="./images/icons.svg#icon-plane">
+                  </use>
+                </svg> -->

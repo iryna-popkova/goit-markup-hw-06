@@ -524,6 +524,10 @@ body {
   background-color: var(--social-hover);
 }
 
+/* footer subscribe form */
+.subscribe-form {
+  margin-left: 80px;
+}
 /* buttoms style */
 
 .button {
@@ -757,4 +761,10 @@ img {
 
 .button-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* modal form */
+textarea {
+  resize: none;
+  width: 100%;
 }
