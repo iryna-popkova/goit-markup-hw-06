@@ -820,6 +820,14 @@ img {
   height: 40px;
   background: #fcfcfc;
   border-radius: 4px;
-  margin-bottom: 26px;
   padding-left: 19px;
+}
+
+.modal-field {
+  margin-bottom: 26px;
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  left: 8px;
 }
