@@ -530,7 +530,6 @@ body {
 }
 
 .footer-input {
-  margin-right: 24px;
   background: #2e2f42;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -555,18 +554,35 @@ body {
 
 .submit-button {
   height: 40px;
-  padding: 8px, 24px, 8px, 24px;
+  width: 165px;
+  padding: 0 0 0 24px;
   background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
-  font-style: Medium;
   font-size: 16px;
   line-height: 2;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.04em;
   color: var(--standart-color);
 }
 
+.plane-icon {
+  fill: var(--standart-color);
+  position: absolute;
+  right: 24px;
+  bottom: 10px;
+}
+
+.button-box {
+  position: relative;
+  margin: 0;
+  width: 165px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
 /* buttoms style */
 
 .button {
@@ -759,7 +775,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 408px;
+  width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -820,7 +836,21 @@ img {
   height: 40px;
   background: #fcfcfc;
   border-radius: 4px;
-  padding-left: 19px;
+  border: 1px solid #2e2f4266;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-size: 12px;
+  color: #8e8f99;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus,
+.form-input:hover {
+  border-color: var(--focus-color);
+}
+.form-input:focus + .modal-icon,
+.form-input:hover + .modal-icon {
+  fill: var(--focus-color);
 }
 
 .modal-field {
@@ -829,5 +859,36 @@ img {
 }
 .modal-icon {
   position: absolute;
-  left: 8px;
+  left: 16px;
+  top: 50%;
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
+
+.send-button {
+  display: block;
+  margin: auto;
+  width: 169px;
+  height: 56px;
+  background-color: var(--accent-color);
+  padding: 16px 32px 16px 32px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--standart-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
