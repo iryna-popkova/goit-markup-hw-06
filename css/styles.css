@@ -913,14 +913,11 @@ img {
 
 .privacy-icon-box {
   display: inline-flex;
-}
-.check-text .privacy-icon-box {
   width: 16px;
   height: 16px;
   border: 1px solid #2e2f4266;
   border-radius: 2px;
   margin-right: 8px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
