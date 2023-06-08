@@ -912,6 +912,7 @@ img {
 }
 
 .check-text .privacy-icon-box {
+  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 1px solid #2e2f4266;
@@ -932,16 +933,17 @@ img {
   fill: var(--standart-color);
 }
 
-.modal-field.privacy {
+.modal-field-privacy {
   margin-top: 0;
   margin-bottom: 24px;
 }
-.modal-field .textarea {
+.modal-field-textarea {
   margin-bottom: 16px;
 }
 
 .policy-link {
   margin-left: 4px;
+  color: var(--accent-color);
 }
 
 .send-button {
