@@ -428,8 +428,8 @@
         </div>
         <div class="subscribe-form">
           <p class="footer-text-two">Subscribe</p>
-          <form name="subscribe" class="footer-form">
-            <label for="email">
+          <form class="footer-form">
+            <label>
               <input
                 type="email"
                 name="email"
@@ -506,17 +506,27 @@
             ></textarea>
           </div>
 
-          <input
-            type="checkbox"
-            name="privacy-policy"
-            id="privacy-policy"
-            class="form-input"
-          />
-          <label for="privacy-policy"
-            >I accept the terms and conditions of the Privacy Policy</label
-          >
-
-          <button type="submit" class="send-button">Send</button>
+          <div class="modal-field privacy">
+            <input
+              class="policy-checkbox visually-hidden"
+              type="checkbox"
+              name="privacy-policy"
+              id="privacy-policy"
+              value="true"
+            />
+            <label for="privacy-policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="policy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="modal-field send">
+            <button type="submit" class="send-button">Send</button>
+          </div>
         </form>
       </div>
     </div>

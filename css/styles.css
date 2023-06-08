@@ -565,6 +565,7 @@ body {
   text-align: left;
   letter-spacing: 0.04em;
   color: var(--standart-color);
+  cursor: pointer;
 }
 
 .plane-icon {
@@ -777,7 +778,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -830,6 +830,7 @@ img {
   padding: 0;
   margin-left: auto;
   margin-bottom: 16px;
+  margin-top: 0;
 }
 /* modal form */
 .form-input {
@@ -876,25 +877,6 @@ img {
   color: #8e8f99;
 }
 
-.send-button {
-  display: block;
-  margin: auto;
-  width: 169px;
-  height: 56px;
-  background-color: var(--accent-color);
-  padding: 16px 32px 16px 32px;
-  box-shadow: 0px 4px 4px 0px #00000026;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  color: var(--standart-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-}
-
 .modal-comment {
   width: 100%;
   height: 120px;
@@ -913,4 +895,63 @@ img {
 
 .modal-comment:focus {
   border: 1px solid #4d5ae5;
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  color: #8e8f99;
+}
+
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f4266;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.policy-checkbox:checked + .check-text span {
+  background-color: var(--focus-color);
+  border: none;
+  fill: #f4f4fd;
+}
+
+.modal-field.privacy {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.policy-link {
+  margin-left: 4px;
+}
+
+.modal-field.send {
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.send-button {
+  display: block;
+  margin: auto;
+  width: 169px;
+  height: 56px;
+  background-color: var(--accent-color);
+  padding: 16px 32px 16px 32px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--standart-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
